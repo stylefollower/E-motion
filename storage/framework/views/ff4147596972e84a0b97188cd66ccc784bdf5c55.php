@@ -80,10 +80,11 @@
     </div>
     </nav>
     
-    <main class="py-4">
-    <?php echo $__env->yieldContent('content'); ?>
-    </main>
+   
     </div>
+    <main class="py-4">
+      <?php echo $__env->yieldContent('content'); ?>
+      </main>
     </div>
 
     

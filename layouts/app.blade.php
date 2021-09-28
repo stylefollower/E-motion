@@ -23,7 +23,7 @@
 </head> 
 <body class="antialiased">
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
            {{ config('app.name', 'E-Motion') }}
@@ -77,11 +77,10 @@
     </div>
     </nav>
     
-   
-    </div>
     <main class="py-4">
-      @yield('content')
-      </main>
+    @yield('content')
+    </main>
+    </div>
     </div>
 
     
