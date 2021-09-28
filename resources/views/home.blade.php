@@ -22,3 +22,7 @@
     </div>
 </div>
 @endsection
+
+@section('mainpost')
+    <h1>whatever</h1>
+@endsection
