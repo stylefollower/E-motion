@@ -23,7 +23,7 @@
 </head> 
 <body class="antialiased">
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
            <?php echo e(config('app.name', 'E-Motion')); ?>
@@ -80,10 +80,11 @@
     </div>
     </nav>
     
-    <main class="py-4">
-    <?php echo $__env->yieldContent('content'); ?>
-    </main>
+   
     </div>
+    <main class="py-4">
+      <?php echo $__env->yieldContent('content'); ?>
+      </main>
     </div>
 
     
