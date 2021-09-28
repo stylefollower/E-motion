@@ -930,6 +930,7 @@
 #55 /var/www/html/server.php(21): require_once('...')
 #56 {main}
 "} 
+<<<<<<< HEAD
 [2021-09-27 09:40:47] local.ERROR: Cannot send message without a sender address {"exception":"[object] (Swift_TransportException(code: 0): Cannot send message without a sender address at /var/www/html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php:195)
 [stacktrace]
 #0 /var/www/html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(71): Swift_Transport_AbstractSmtpTransport->send()
@@ -1765,3 +1766,5 @@
 #27 /var/www/html/server.php(21): require_once('...')
 #28 {main}
 "} 
+=======
+>>>>>>> aca8602b439cb86a407607ca48c9a692600a22ca
