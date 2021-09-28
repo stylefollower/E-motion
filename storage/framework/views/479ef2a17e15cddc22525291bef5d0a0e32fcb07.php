@@ -61,13 +61,25 @@
     <div class="container">
       <H1>COMMENTS</H1>
       <br>
-      <h4>Gonzalo</h4>
       <br>
       <div class="card border-primary mb-3" style="max-width: 50vw;">
-        <div class="card-header">Header</div>
+        <div class="card-header">Gonzalo's Comment</div>
         <div class="card-body">
-          <h4 class="card-title">Primary card title</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Awesome post man, I totally 100% agree with you, keep up the great work!</p>
+        </div>
+      </div>
+      <br>
+      <div class="card border-primary mb-3" style="max-width: 50vw;">
+        <div class="card-header">Oli's Comment</div>
+        <div class="card-body">
+          <p class="card-text">Your post sucks man, jeez...</p>
+        </div>
+      </div>
+      <br>
+      <div class="card border-primary mb-3" style="max-width: 50vw;">
+        <div class="card-header">Marc's Comment</div>
+        <div class="card-body">
+          <p class="card-text">What is this nonesense, I came here for some good content and you give me this.</p>
         </div>
       </div>
   </section>

@@ -22,6 +22,7 @@
     <!-- Styles -->
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{URL::asset('image/logo.png')}}">
     <style>
       <style>
 
