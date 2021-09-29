@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+//use app\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,6 +25,16 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/post', function () {
-    return view('post');
-});
+//routes search from KT
+// Route::get('/', 'HomeController@showAll');
+// Route::post('/create', 'HomeController@create');
+// Route::get('/posts/{id}', 'HomeController@view');
+// Route::delete('/posts/{id}', 'HomeController@delete');
+
+// Route::get('/post', 'HomeController@search')->name('search');
+
+// Route::get('/post', function () {
+//     return view('postDetails');
+// });
+
+//Route::get('/test', 'HomeController@showAllPosts');
