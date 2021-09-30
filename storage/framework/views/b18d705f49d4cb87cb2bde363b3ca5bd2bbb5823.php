@@ -108,9 +108,17 @@
       <img class="img-fluid" src="<?php echo e(URL::asset('/image/car1.jpg')); ?>" alt="main site image">
       <h1 class="jumbotron-heading my-2">Post Example</h1>
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      
+      
+
       <p>
           
         <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary my-5">Read More (Link to single post page)</a>
+
+        <?php if(auth()->guard()->check()): ?>
+        <a href="<?php echo e(url('/postDetails')); ?>" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
+            
+        <?php endif; ?>
 
       </p>
     </div>

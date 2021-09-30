@@ -105,9 +105,19 @@
       <img class="img-fluid" src="{{URL::asset('/image/car1.jpg')}}" alt="main site image">
       <h1 class="jumbotron-heading my-2">Post Example</h1>
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      
+      {{-- @auth
+      <p><a href="https://opportunity-zueri.ch">HelloWorld</a></p>
+      @endauth --}}
+
       <p>
           
         <a href="{{url('/post')}}" class="btn btn-primary my-5">Read More (Link to single post page)</a>
+
+        @auth
+        <a href="{{url('/postDetails')}}" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
+            
+        @endauth
 
       </p>
     </div>

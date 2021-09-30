@@ -2,12 +2,13 @@
 @extends('layouts.nav')
 @extends('welcome')
 
-<!--@section('title', $post->category)
+{{-- @section('title', $post->category)
 
-@section('content')-->
+@section('content')--> --}}
 
 <!--display search results from KT-->
-<h2>{{$post->title}}</h2>
+
+{{-- <h2>{{$post->title}}</h2>
 <p>{{$post->content}}<br>
 {{$post->author}}<br>
 {{$post->category}}<br>
@@ -23,4 +24,4 @@
 </form>
 
 
-@endsection
+@endsection  --}}

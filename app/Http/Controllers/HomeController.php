@@ -52,13 +52,13 @@ class HomeController extends Controller
         return view('post', compact('posts'));
     }
 
-    public function showAllPosts()
-    {
-        $categories = DB::table('categories')->get();
-        echo '<pre>';
-        var_dump($categories);
-        echo '</pre>';
+    // public function showAllPosts()
+    // {
+    //     $categories = DB::table('categories')->get();
+    //     echo '<pre>';
+    //     var_dump($categories);
+    //     echo '</pre>';
 
-        return view('showPosts', $categories);
-    }
+    //     return view('showPosts', $categories);
+    // }
 }

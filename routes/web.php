@@ -25,16 +25,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//routes search from KT
-// Route::get('/', 'HomeController@showAll');
-// Route::post('/create', 'HomeController@create');
-// Route::get('/posts/{id}', 'HomeController@view');
-// Route::delete('/posts/{id}', 'HomeController@delete');
-
-// Route::get('/post', 'HomeController@search')->name('search');
-
-// Route::get('/post', function () {
-//     return view('postDetails');
-// });
-
-//Route::get('/test', 'HomeController@showAllPosts');
+Route::get('/postDetails', function () {
+    return view('postDetails');
+});
