@@ -112,10 +112,10 @@
 
       <p>
           
-        <a href="{{url('/post')}}" class="btn btn-primary my-5">Read More (Link to single post page)</a>
+        <a href="{{url('/article')}}" class="btn btn-primary my-5">Read More (Link to single post page)</a>
 
         @auth
-        <a href="{{url('/postDetails')}}" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
+        <a href="{{url('/admin')}}" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
             
         @endauth
 

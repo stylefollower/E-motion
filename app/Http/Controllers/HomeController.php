@@ -24,6 +24,45 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    public function showAll()
+    {
+
+        $posts = Post::all();
+
+        return view('post', ['posts' => $posts]);
+    }
+
+    public function create(Request $request)
+    {
+
+        $post = new Post();
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->category = $request->category;
+        $post->author = $request->author;
+        $post->content = $request->content;
+
+        $post->save();
+
+        return redirect('/dashboard');
+    }
+
+    public function view($id)
+    {
+
+        $post = Post::findOrFail($id);
+
+        return view('postDetails', ['post' => $post]);
+    }
+
+    public function delete($id)
+    {
+        $result = Post::findOrFail($id)->delete();
+        return redirect('/');
+    }
+
+
     public function index()
     {
         return view('home');

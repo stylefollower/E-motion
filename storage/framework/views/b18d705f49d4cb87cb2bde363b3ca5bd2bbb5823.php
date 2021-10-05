@@ -113,10 +113,10 @@
 
       <p>
           
-        <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary my-5">Read More (Link to single post page)</a>
+        <a href="<?php echo e(url('/article')); ?>" class="btn btn-primary my-5">Read More (Link to single post page)</a>
 
         <?php if(auth()->guard()->check()): ?>
-        <a href="<?php echo e(url('/postDetails')); ?>" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
+        <a href="<?php echo e(url('/admin')); ?>" class="btn btn-primary my-5">Manage articles (Link to manage page)</a>
             
         <?php endif; ?>
 
