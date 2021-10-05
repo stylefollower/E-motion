@@ -469,9 +469,10 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -2397,7 +2398,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #36203f;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -6171,7 +6172,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #36203f !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
