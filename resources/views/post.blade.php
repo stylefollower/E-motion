@@ -2,12 +2,12 @@
 
 @section('post')
 <main role="main">
-
+  
+  <img class="img-fluid w-100" src="{{URL::asset('/image/hero_1.jpg')}}" alt="Responsive image">
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading my-3">Welcome to e-Motion Blog</h1>
       <br>
-      <img class="img-fluid w-100" src="{{URL::asset('/image/hero_1.jpg')}}" alt="Responsive image">
       
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
       <p>
