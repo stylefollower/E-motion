@@ -5,9 +5,9 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading my-3">Single Post Example</h1>
+      <h1 class="jumbotron-heading my-3">Welcome to e-Motion Blog</h1>
       <br>
-      <img class="img-fluid   my-2" src="{{URL::asset('/image/car1.jpg')}}" alt="main site image">
+      <img class="img-fluid w-100" src="{{URL::asset('/image/hero_1.jpg')}}" alt="Responsive image">
       
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
       <p>
@@ -57,33 +57,6 @@
           Nullam quis risus eget urna mollis ornare vel eu leo. 
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
     </div>
-  </section>
-
-  <section class="jumbotron">
-    <div class="container">
-      <H1>COMMENTS</H1>
-      <br>
-      <br>
-      <div class="card border-primary mb-3" style="max-width: 50vw;">
-        <div class="card-header">Gonzalo's Comment</div>
-        <div class="card-body">
-          <p class="card-text">Awesome post man, I totally 100% agree with you, keep up the great work!</p>
-        </div>
-      </div>
-      <br>
-      <div class="card border-primary mb-3" style="max-width: 50vw;">
-        <div class="card-header">Oli's Comment</div>
-        <div class="card-body">
-          <p class="card-text">Your post sucks man, jeez...</p>
-        </div>
-      </div>
-      <br>
-      <div class="card border-primary mb-3" style="max-width: 50vw;">
-        <div class="card-header">Marc's Comment</div>
-        <div class="card-body">
-          <p class="card-text">What is this nonesense, I came here for some good content and you give me this.</p>
-        </div>
-      </div>
   </section>
   
 </main>
