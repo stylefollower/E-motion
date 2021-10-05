@@ -9710,7 +9710,7 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 @media (min-width: 576px) {

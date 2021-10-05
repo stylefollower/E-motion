@@ -4,8 +4,8 @@
     
 
 
-<img id="imageMain" class="img-fluid" src="{{URL::asset('/image/hero_1.jpg')}}" alt="main site image">
 <main role="main">
+  <img id="imageMain" class="img-fluid" src="{{URL::asset('/image/hero_1.jpg')}}" alt="main site image">
 
   <section class="jumbotron text-center bg-dark">
     <div class="container">
