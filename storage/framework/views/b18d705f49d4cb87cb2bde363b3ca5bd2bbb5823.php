@@ -50,11 +50,11 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo e(url('/post')); ?>">Post</a>
+          <a class="nav-link" href="<?php echo e(url('/article')); ?>">Post</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo e(url('/home')); ?>">Dashboard</a>
+          <a class="nav-link" href="<?php echo e(url('/admin')); ?>">Dashboard</a>
         </li>
       </ul>
       

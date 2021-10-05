@@ -30,7 +30,7 @@ class HomeController extends Controller
 
         $posts = Post::all();
 
-        return view('post', ['posts' => $posts]);
+        return view('admin', ['posts' => $posts]);
     }
 
     public function create(Request $request)
@@ -45,7 +45,7 @@ class HomeController extends Controller
 
         $post->save();
 
-        return redirect('/dashboard');
+        return redirect('/admin');
     }
 
     public function view($id)
@@ -53,13 +53,13 @@ class HomeController extends Controller
 
         $post = Post::findOrFail($id);
 
-        return view('postDetails', ['post' => $post]);
+        return view('admin', ['post' => $post]);
     }
 
     public function delete($id)
     {
         $result = Post::findOrFail($id)->delete();
-        return redirect('/');
+        return redirect('/admin');
     }
 
 
@@ -70,7 +70,7 @@ class HomeController extends Controller
 
     public function post()
     {
-        return view('post');
+        return view('article');
     }
 
     public function search(Request $request)
