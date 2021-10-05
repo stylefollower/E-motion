@@ -64,10 +64,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $newUser = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        /* 
+            Schlachtplan:
+
+            1st - Get the id-value of the 'common' user from class Roles.
+            2nd - Create controller class for table 'user_roles': build its create(array $data) function
+                  using user_id and role_id
+        */
+
+        return $newUser;
     }
 }

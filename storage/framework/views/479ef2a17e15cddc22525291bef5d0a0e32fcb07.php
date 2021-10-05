@@ -1,180 +1,77 @@
-<?php $__env->startSection('content'); ?>
+<?php $__env->startSection('post'); ?>
 <main role="main">
 
-    <section class="jumbotron text-center">
-      <div class="container">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading my-3">Single Post Example</h1>
+      <br>
+      <img class="img-fluid   my-2" src="<?php echo e(URL::asset('/image/car1.jpg')); ?>" alt="main site image">
+      
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <p>
+          
         
-        <img class="img-fluid" src="<?php echo e(URL::asset('/image/car1.jpg')); ?>" alt="main site image">
-        <h1 class="jumbotron-heading my-2">Post Example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <p>
-            
-          <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary my-5">Read More (Link to single post page)</a>
-  
-        </p>
-      </div>
-    </section>
-  
-    
-  
-  
-    <div class="album py-5 bg-light">
-      <div class="container">
-  
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="<?php echo e(URL::asset('/image/carousel1.jpg')); ?>" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-title">One post</p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="<?php echo e(URL::asset('/image/carousel2.jpg')); ?>" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-title">One post</p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="<?php echo e(URL::asset('/image/carousel3.jpg')); ?>" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-title">One post</p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+
+      </p>
+    </div>
+  </section>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h2 class=" jumbotron-heading my-5">Example body text</h2>
+      <p class="h2">Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        
+        <hr>
+
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+        <hr>
+
+        <img src="<?php echo e(URL:: asset('/image/art1.png')); ?>" alt="" class="img-fluid">
+
+        <br>
+        <br>
+        <p class="h4 my-3">Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nullam quis risus eget urna mollis ornare vel eu leo. 
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    </div>
+  </section>
+
+  <section class="jumbotron">
+    <div class="container">
+      <H1>COMMENTS</H1>
+      <br>
+      <h4>Gonzalo</h4>
+      <br>
+      <div class="card border-primary mb-3" style="max-width: 50vw;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Primary card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
-    </div>
+  </section>
   
-  </main>
-  
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#">Back to top</a>
-      </p>
-      <p>This is the footer</p>
-    </div>
-  </footer>
+</main>
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('welcome', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views/post.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views/post.blade.php ENDPATH**/ ?>

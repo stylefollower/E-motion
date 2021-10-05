@@ -4,11 +4,18 @@
 
 <main role="main">
 
-<<<<<<< HEAD
   <section class="jumbotron text-center">
     <div class="container">
       
       <img class="img-fluid" src="<?php echo e(URL::asset('/image/car1.jpg')); ?>" alt="main site image">
+
+      <?php if( auth()->user() ): ?>
+        <?php if( auth()->user()->roles()->where('name', 'admin')->exists() ): ?>
+        <h1 class="jumbotron-heading my-2">dummy</h1>
+        <?php endif; ?>
+      <?php endif; ?>
+
+
       <h1 class="jumbotron-heading my-3">Post Example</h1>
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
       <p>
@@ -42,42 +49,6 @@
                 <small class="text-muted">9 mins</small>
               </div>
             </div>
-=======
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
-    
-    
-
-    <!-- Styles -->
-    
-    <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
-
-    </head>
-<div id="app">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          
-          <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-            <img src="<?php echo e(URL::asset('/image/logo.png')); ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
-             <?php echo e(config('app.name', 'E-Motion')); ?>
-
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left Side Of Navbar -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Categories</a>                    <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Tesla</a>
-            <a class="dropdown-item" href="#">Automobiles</a>
-            <a class="dropdown-item" href="#">Motorcycles</a>
-            <a class="dropdown-item" href="#">News</a>
->>>>>>> d447b4507955d8621f47ebaa56f7f44b44adef83
           </div>
         </div>
         
@@ -428,16 +399,5 @@
 
 <?php $__env->stopSection(); ?>  
 
-<<<<<<< HEAD
 
 <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views/welcome.blade.php ENDPATH**/ ?>
-=======
-    
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
-      <script src="../../assets/js/vendor/holder.min.js"></script>
-</html>
-<?php /**PATH /var/www/html/resources/views/welcome.blade.php ENDPATH**/ ?>
->>>>>>> d447b4507955d8621f47ebaa56f7f44b44adef83
