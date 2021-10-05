@@ -49,11 +49,11 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/post')}}">Post</a>
+          <a class="nav-link" href="{{ url('/article')}}">Post</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{{url('/home')}}">Dashboard</a>
+          <a class="nav-link" href="{{url('/admin')}}">Dashboard</a>
         </li>
       </ul>
       
