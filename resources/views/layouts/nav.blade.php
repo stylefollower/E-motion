@@ -120,7 +120,7 @@ color: #0894d1;
       <ul class="navbar-nav mr-auto">
         
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/post')}}">Post</a>
+          <a class="nav-link" href="{{ url('/post')}}">Blog</a>
         </li>
 
         <li class="nav-item">
@@ -177,7 +177,7 @@ color: #0894d1;
 
 {{-- footer --}}
 
-  <div class="copyright text-center">
+  <div class="copyright text-center bg-dark">
     Copyright &copy; 2021 <span>e-Motion Blog</span>
   </div>
 </footer>

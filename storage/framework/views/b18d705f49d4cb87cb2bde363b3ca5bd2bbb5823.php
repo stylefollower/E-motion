@@ -2,17 +2,17 @@
     
 
 
+<img id="imageMain" class="img-fluid" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="main site image">
 <main role="main">
 
-  <img id="imageMain" class="img-fluid" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="main site image">
-  <section class="jumbotron text-center bg-light">
+  <section class="jumbotron text-center bg-dark">
     <div class="container">
       
       <h1 class="jumbotron-heading my-3">Post Example</h1>
       <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
       <p>
           
-        <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary mb-3 flex-fill">Read More (Link to single post page)</a>
+        <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary mb-3 flex-fill">Read More</a>
 
       </p>
     </div>
@@ -22,7 +22,7 @@
   
 
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-black">
     <div class="container">
 
       <div class="row">
