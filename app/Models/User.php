@@ -12,6 +12,19 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function can_post()
+    {
+        return true;
+
+        //   $role = $this->role;
+        //   if ($role == 'author' || $role == 'admin') {
+        //     return true;
+        //   }
+        //   return false;
+
+    }
+
+
     /**
      * The attributes that are mass assignable.
      *

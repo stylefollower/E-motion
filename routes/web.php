@@ -25,7 +25,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/post', function(){
+Route::get('/post', function () {
     return view('post');
 });
 
+Route::get('/createPost', function () {
+    return view('createPost');
+});
+
+// save new post
+Route::post('new-post', 'PostController@store');
