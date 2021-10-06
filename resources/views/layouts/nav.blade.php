@@ -113,6 +113,9 @@ navbar {
   color: linear-gradient(to right, red , yellow) !important;
 }
 
+iframe {
+  min-height: 80vh;
+}
 
 </style>
 

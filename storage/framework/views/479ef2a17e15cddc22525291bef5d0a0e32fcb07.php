@@ -23,7 +23,7 @@
 
         <hr>
 
-        <img src="<?php echo e(URL:: asset('/image/art1.png')); ?>" alt="" class="img-fluid">
+        <img src="<?php echo e(URL:: asset('/image/hero_4.jpg')); ?>" alt="" class="img-fluid">
 
         <hr>
 
