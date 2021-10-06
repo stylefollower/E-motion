@@ -30,6 +30,8 @@ footer {
 background: rgb(43, 41, 41);
 color: #aaa;
 padding-top: 10px;
+position: fixed;
+bottom: 0;
 }
 
 footer a {
@@ -43,7 +45,7 @@ color: #fff;
 footer h3 {
 color: #0894d1;
 letter-spacing: 1px;
-margin: 30px 0 20px;
+
 }
 
 footer .three-column {
@@ -58,7 +60,7 @@ padding: 5px 0;
 
 footer .socila-list {
 overflow: hidden;
-margin: 20px 0 10px;
+
 }
 
 footer .socila-list li {
@@ -83,7 +85,7 @@ margin-bottom: 5px;
 footer .copyright {
 padding: 15px 0;
 background: #333;
-margin-top: 20px;
+
 font-size: 15px;
 }
 
@@ -93,6 +95,27 @@ color: #0894d1;
 
 .jumbotron {
   margin-bottom: 0px;
+}
+
+.dashboard {
+  min-height: 59vh;
+}
+
+@media screen and ( height: 200px ) {
+  .dashboard {
+    height: 65vh;
+  }
+ }
+
+.login  {
+  height: 86.5vh;
+}
+.container .jumbotron {
+    border-radius: 0 !important;
+}
+
+navbar {
+  color: linear-gradient(to right, red , yellow) !important;
 }
 
 
@@ -176,7 +199,7 @@ color: #0894d1;
 @yield('content')
 
 {{-- footer --}}
-
+<footer>
   <div class="copyright text-center bg-dark">
     Copyright &copy; 2021 <span>e-Motion Blog</span>
   </div>

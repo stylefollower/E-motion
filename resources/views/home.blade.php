@@ -16,7 +16,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div class="container">
+                    <div class="container dashboard">
                         <h1>NAME: </h1> <p>Gonzalo</p>
                         <br>
                         <h1>EMAIL</h1> <p>g@g.g</p>
