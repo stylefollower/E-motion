@@ -15,10 +15,10 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="First slide">
+            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_3.jpg')); ?>" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="Second slide">
+            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_2.jpg')); ?>" alt="Second slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="Third slide">
@@ -34,8 +34,8 @@
         </a>
       </div>
       
-      <h1 class="jumbotron-heading my-3">Post Example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <h1 class="jumbotron-heading my-3">Meet the new Mercedes VISION AVTR</h1>
+      <p class="lead text-muted">This new concept by Mercedes defies all boundaries of what an electric car should be, or look like. Click the button read more.</p>
       <p>
           
         <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary mb-3 flex-fill">Read More</a>
