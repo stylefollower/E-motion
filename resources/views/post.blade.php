@@ -6,7 +6,7 @@
 
   <section class="jumbotron text-center bg-black">
     <div class="container">
-      <h2 class=" jumbotron-heading my-5 display-3">Example body text</h2>
+      <h2 class="my-5 h1">Mercedes AVTR</h2>
       <p class="h2">Nullam quis risus eget urna mollis ornare vel eu leo. 
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
@@ -14,7 +14,7 @@
         
         <hr>
 
-        <p class="text-left">Nullam quis risus eget urna mollis ornare vel eu leo. 
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. 
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
@@ -31,19 +31,7 @@
 
         <br>
         <br>
-        <p class="h4 text-left">Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          Nullam quis risus eget urna mollis ornare vel eu leo. 
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        <p class="h4 text-left">
     </div>
   </section>
   

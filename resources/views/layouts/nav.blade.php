@@ -101,11 +101,6 @@ color: #0894d1;
   min-height: 59vh;
 }
 
-@media screen and ( height: 200px ) {
-  .dashboard {
-    height: 65vh;
-  }
- }
 
 .login  {
   height: 86.5vh;
