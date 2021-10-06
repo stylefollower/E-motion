@@ -15,7 +15,7 @@
 
            <hr>
 
-           We believe that electric vehicles are the future of your mother.
+           We believe that electric vehicles are the future of your mothers and daughters.
 
        </p>
        <img src="{{URL::asset('/image/elon.jpg')}}" alt="" width="60%" class="d-inline-block align-text-top">
