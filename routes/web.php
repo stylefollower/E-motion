@@ -35,3 +35,7 @@ Route::get('/createPost', function () {
 
 // save new post
 Route::post('new-post', 'PostController@store');
+
+Route::get('/about', function () {
+    return view('about');
+});

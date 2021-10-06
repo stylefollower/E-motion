@@ -5,13 +5,39 @@
 
 
 <main role="main">
-  <img id="imageMain" class="img-fluid" src="{{URL::asset('/image/hero_1.jpg')}}" alt="main site image">
+  
 
-  <section class="jumbotron text-center bg-dark">
+  <section class="jumbotron text-center aboutus">
     <div class="container">
-      
-      <h1 class="jumbotron-heading my-3">Post Example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{{URL::asset('/image/hero_3.jpg')}}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{URL::asset('/image/hero_2.jpg')}}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{URL::asset('/image/hero_1.jpg')}}" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      {{-- <img id="imageMain" class="img-fluid" src="{{URL::asset('/image/hero_1.jpg')}}" alt="main site image"> --}}
+      <h1 class="jumbotron-heading my-3">Meet the new Mercedes VISION AVTR</h1>
+      <p class="lead text-muted">This new concept by Mercedes defies all boundaries of what an electric car should be, or look like. Click the button read more.</p>
       <p>
           
         <a href="{{url('/post')}}" class="btn btn-primary mb-3 flex-fill">Read More</a>

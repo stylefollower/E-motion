@@ -1,3 +1,7 @@
 body {
     padding-bottom: 70px ;
 }
+
+.container .jumbotron {
+    border-radius: 0 !important;
+}

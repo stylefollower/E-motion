@@ -29,6 +29,8 @@ footer {
 background: rgb(43, 41, 41);
 color: #aaa;
 padding-top: 10px;
+position: fixed;
+bottom: 0;
 }
 
 footer a {
@@ -42,7 +44,7 @@ color: #fff;
 footer h3 {
 color: #0894d1;
 letter-spacing: 1px;
-margin: 30px 0 20px;
+
 }
 
 footer .three-column {
@@ -56,7 +58,7 @@ padding: 5px 0;
 }
 footer .socila-list {
 overflow: hidden;
-margin: 20px 0 10px;
+
 }
 footer .socila-list li {
 float: left;
@@ -79,7 +81,7 @@ margin-bottom: 5px;
 footer .copyright {
 padding: 15px 0;
 background: #333;
-margin-top: 20px;
+
 font-size: 15px;
 }
 
@@ -91,6 +93,30 @@ color: #0894d1;
   margin-bottom: 0px;
 }
 
+.dashboard {
+  min-height: 59vh;
+}
+
+
+.login  {
+  height: 86.5vh;
+}
+.container .jumbotron {
+    border-radius: 0 !important;
+}
+
+navbar {
+  color: linear-gradient(to right, red , yellow) !important;
+}
+
+iframe {
+  min-height: 80vh;
+}
+
+.aboutus {
+  min-height: 73vh;
+  background-image: linear-gradient( black, #59318d) !important;
+}
 
 </style>
 
@@ -122,6 +148,11 @@ color: #0894d1;
         <li class="nav-item">
           <a class="nav-link" href="{{url('/home')}}">Dashboard</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/about')}}">About Us</a>
+        </li>
+
       </ul>
       
       <!-- Right Side Of Navbar -->
@@ -170,9 +201,10 @@ color: #0894d1;
 @yield('welcome')
 @yield('post')
 @yield('content')
+@yield('about')
 
 {{-- footer --}}
-
+<footer>
   <div class="copyright text-center bg-dark">
     Copyright &copy; 2021 <span>e-Motion Blog</span>
   </div>
