@@ -117,6 +117,11 @@ iframe {
   min-height: 80vh;
 }
 
+.aboutus {
+  min-height: 73vh;
+  background-image: linear-gradient( black, #59318d) !important;
+}
+
 </style>
 
 <!-- Styles END -->
@@ -147,6 +152,11 @@ iframe {
         <li class="nav-item">
           <a class="nav-link" href="{{url('/home')}}">Dashboard</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/about')}}">About Us</a>
+        </li>
+
       </ul>
       
       <!-- Right Side Of Navbar -->
@@ -195,6 +205,7 @@ iframe {
 @yield('welcome')
 @yield('post')
 @yield('content')
+@yield('about')
 
 {{-- footer --}}
 <footer>

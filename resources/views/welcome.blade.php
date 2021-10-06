@@ -7,7 +7,7 @@
 <main role="main">
   
 
-  <section class="jumbotron text-center bg-dark">
+  <section class="jumbotron text-center aboutus">
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

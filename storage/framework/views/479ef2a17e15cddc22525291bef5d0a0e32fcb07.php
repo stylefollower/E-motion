@@ -2,7 +2,7 @@
 <main role="main">
   
 
-  <section class="jumbotron text-center bg-black">
+  <section class="jumbotron text-center aboutus">
     <div class="container">
       <h2 class=" jumbotron-heading my-5 font-weight-bold">Mercedes Vision AVTR: we drive the futuristic concept car… from 900 miles away</h2>
       <p class="h4 ">The Mercedes Vision AVTR is a car where science fiction meets automotive 

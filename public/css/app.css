@@ -6179,6 +6179,9 @@ button.bg-light:focus {
   background-image: linear-gradient(to bottom right, #36203f, black) !important;
 }
 
+.bg-background {
+  background-image: linear-gradient(to top bottom, black, #702963) !important;
+}
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
