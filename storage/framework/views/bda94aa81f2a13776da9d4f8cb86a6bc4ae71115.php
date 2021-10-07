@@ -1,129 +1,82 @@
-<!DOCTYPE html>
-<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-
-    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
-
-    <!-- Scripts -->
-    <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
-    
+<?php $__env->startSection('welcome'); ?>
     
 
-    <!-- Styles -->
-    <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
 
-    </head>
-    <div id="app">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-             <?php echo e(config('app.name', 'E-Motion')); ?>
+<main role="main">
+  
 
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left Side Of Navbar -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Categories</a>                    <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Tesla</a>
-            <a class="dropdown-item" href="#">Automobiles</a>
-            <a class="dropdown-item" href="#">Motorcycles</a>
-            <a class="dropdown-item" href="#">News</a>
-          </div>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-      
-      <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav ml-auto">
-      <!-- Authentication Links -->
-      <?php if(auth()->guard()->guest()): ?>
-      <?php if(Route::has('login')): ?>
-      <li class="nav-item">
-      <a class="nav-link" href="<?php echo e(route('login')); ?>"><?php echo e(__('Login')); ?></a>
-      </li>
-      <?php endif; ?>
-      
-      <?php if(Route::has('register')): ?>
-      <li class="nav-item">
-      <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Register')); ?></a>
-      </li>
-      <?php endif; ?>
-      <?php else: ?>
-      <li class="nav-item dropdown">
-      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-      <?php echo e(Auth::user()->name); ?>
-
-      </a>
-      
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
-      onclick="event.preventDefault();
-      document.getElementById('logout-form').submit();">
-      <?php echo e(__('Logout')); ?>
-
-      </a>
-      
-      <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" class="d-none">
-      <?php echo csrf_field(); ?>
-      </form>
-      </div>
-      </li>
-      <?php endif; ?>
-      </ul>
-      </div>
-      </div>
-      </nav>
-      
-      <main class="py-4">
-      
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <section class="jumbotron text-center aboutus">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/images/carousel2.jpg" alt="First slide">
+            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_3.jpg')); ?>" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
+            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_2.jpg')); ?>" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
+            <img class="d-block w-100" src="<?php echo e(URL::asset('/image/hero_1.jpg')); ?>" alt="Third slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
-      </main>
-      </div>
-      </div>
+      
+      <h1 class="jumbotron-heading my-3">Meet the new Mercedes VISION AVTR</h1>
+      <p class="lead text-muted">This new concept by Mercedes defies all boundaries of what an electric car should be, or look like. Click the button read more.</p>
+      <p>
+          
+        <a href="<?php echo e(url('/post')); ?>" class="btn btn-primary mb-3 flex-fill">Read More</a>
 
-      <footer id="footer">
-        <div class="container">
-          example text
-        </div>
-      </footer>
+      </p>
+    </div>
+    
+  </section>
+
   
-</html>
-<?php /**PATH /var/www/html/resources/views//welcome.blade.php ENDPATH**/ ?>
+
+
+  <div class="album py-5 bg-black">
+    <div class="container">
+
+      <div class="row">
+        
+        <?php $__currentLoopData = $messages; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $message): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="<?php echo e(URL::asset('/image/art1.png')); ?>" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title"><?php echo e($message->title); ?></p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        
+        
+
+</main>
+
+<?php $__env->stopSection(); ?>  
+
+
+<?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/html/resources/views//welcome.blade.php ENDPATH**/ ?>

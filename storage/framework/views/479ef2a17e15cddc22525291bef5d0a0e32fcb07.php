@@ -4,6 +4,8 @@
 
   <section class="jumbotron text-center aboutus">
     <div class="container">
+
+        </ul>
       <h2 class=" jumbotron-heading my-5 font-weight-bold">Mercedes Vision AVTR: we drive the futuristic concept car… from 900 miles away</h2>
       <p class="h4 ">The Mercedes Vision AVTR is a car where science fiction meets automotive 
         ambition and GQ got behind the wheel without leaving home…</p>
