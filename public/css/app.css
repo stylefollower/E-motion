@@ -3975,6 +3975,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.32rem;
@@ -6178,6 +6179,7 @@ button.bg-light:focus {
 .bg-dark {
   background-image: linear-gradient(to bottom right, #36203f, black) !important;
 }
+
 
 
 a.bg-dark:hover, a.bg-dark:focus,

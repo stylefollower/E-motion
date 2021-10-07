@@ -101,11 +101,6 @@ color: #0894d1;
   min-height: 59vh;
 }
 
-@media screen and ( height: 200px ) {
-  .dashboard {
-    height: 65vh;
-  }
- }
 
 .login  {
   height: 86.5vh;
@@ -120,6 +115,11 @@ navbar {
 
 iframe {
   min-height: 80vh;
+}
+
+.aboutus {
+  min-height: 73vh;
+  background-image: linear-gradient( black, #59318d) !important;
 }
 
 </style>
@@ -143,7 +143,7 @@ iframe {
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left Side Of Navbar -->
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto mx-4">
         
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/post')}}">Blog</a>
@@ -152,6 +152,15 @@ iframe {
         <li class="nav-item">
           <a class="nav-link" href="{{url('/home')}}">Dashboard</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/about')}}">About Us</a>
+        </li>
+
+        @auth<li class="nav-item">
+          <a class="nav-link" href="{{ url('/create')}}">Create a Post</a>
+        </li>
+        @endauth
       </ul>
       
       <!-- Right Side Of Navbar -->
@@ -200,6 +209,7 @@ iframe {
 @yield('welcome')
 @yield('post')
 @yield('content')
+@yield('about')
 
 {{-- footer --}}
 <footer>

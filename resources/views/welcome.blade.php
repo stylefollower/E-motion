@@ -7,7 +7,7 @@
 <main role="main">
   
 
-  <section class="jumbotron text-center bg-dark">
+  <section class="jumbotron text-center aboutus">
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -55,12 +55,13 @@
 
       <div class="row">
         {{-- for each post we will repeat this code below --}}
+        @foreach ($messages as $message)
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="{{URL::asset('/image/art1.png')}}" alt="Card image cap">
             <div class="card-body">
-              <p class="card-title">One post</p>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-title">{{$message->title}}</p>
+              <p class="card-text">{{$message->content}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
@@ -71,8 +72,9 @@
             </div>
           </div>
         </div>
+        @endforeach
         {{-- until here --}}
-        <div class="col-md-4">
+        {{-- <div class="col-md-4">
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="{{URL::asset('/image/art2.png')}}" alt="Card image cap">
             <div class="card-body">
@@ -152,7 +154,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
 </main>
 

@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
-<section class="jumbotron text-center">
+<section class="jumbotron text-center bg-dark">
 <div class="container">
   
     <div class="row justify-content-center">
